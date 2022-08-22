@@ -1,6 +1,7 @@
 :root {
     --main-color: #F5911D;
     --second-color:#F5CD42;
+    --third-color:#1A1B30;
   }
 * {
     margin: 0;
@@ -16,9 +17,9 @@ body {
 .contenedor {
     width: 100%;
     max-height: 1000px;
-    margin: 1px auto;
+    margin:auto;
     display: grid;
-    gap: 1px;
+    /* gap: 1px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: -1;
 }
@@ -28,11 +29,11 @@ body {
 .contenedor .footer {
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .contenedor .header {
-    background-color: #F5911D;
+    background-color: var(--third-color);
     color: #fff;
     font-weight: bold;
     grid-column-start: 1;
