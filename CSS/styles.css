@@ -41,6 +41,11 @@ body {
 
 .contenido {
     grid-column: span 3;
+    background-image: url(/SVG/low-poly-grid-haikei.svg);
+    background-size: cover;
+    display: grid;
+    min-height: 799px;
+    /* opacity: 80%; */
     /* height: 80.5vh; */
 }
 
@@ -48,19 +53,22 @@ body {
     grid-column: span 3;
 }
 .grid-articulos{
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: grid;
     /* width: 100%; */
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: 2;
-    gap: 2px;
+    /* gap: 10px; */
+    /* column-gap: 10px; */
     row-gap: 100px;
 
 
 }   
 .item{
-    margin-top: 100px;
-    margin-left:100px;
+    justify-self: center;
+    border: 3px solid #01484C;
     width: 225px;
     height: 325px;
-    background-color: var(--second-color);
+    /* background-color: var(--second-color); */
 }
