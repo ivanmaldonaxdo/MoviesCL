@@ -58,7 +58,7 @@ body {
     grid-column: span 3;
 }
 .grid-articulos{
-    margin-top: 100px;
+    margin-top: 3.6em;
     margin-bottom: 100px;
     display: grid;
     /* grid-template-columns: repeat(6,1fr); */
@@ -66,9 +66,10 @@ body {
         auto-fit,
         minmax(225px,1fr)
     );
-    grid-template-rows: 2;
+    /* grid-template-rows: 2; */
     column-gap: 10px; 
-    /* row-gap: 100px; */
+    row-gap: 6em;
+    justify-items: center;
 
 
 }   
@@ -91,7 +92,7 @@ body {
     text-align: center;
 }
 
-.item > button {
+.item > .button-ds1 {
     align-self: center;
 }
 
@@ -103,12 +104,13 @@ body {
     align-self: center;
 }
 .alinea-buton{
+    margin-top:1.6em ;
     width: 68%;
-    margin-left: 20%;
+    margin-left: 18%;
     margin-right: 10%;
 }
 /* From uiverse.io by @nikk7007 */
-button {
+.button-ds1 {
     padding: 0.8em 1.8em;
     border: 2px solid #17C3B2;
     position: relative;
@@ -123,7 +125,7 @@ button {
     color: #17C3B2;
    }
    
-   button::before {
+   .button-ds1::before {
     content: '';
     width: 0;
     height: 300%;
@@ -137,10 +139,10 @@ button {
     z-index: -1;
    }
    
-   button:hover::before {
+   .button-ds1:hover::before {
     width: 105%;
    }
    
-   button:hover {
+   .button-ds1:hover {
     color: #111;
    }
