@@ -2,6 +2,7 @@
     --main-color: #F5911D;
     --second-color:#F5CD42;
     --third-color:#1A1B30;
+    --min-altura:799px;
   }
 * {
     margin: 0;
@@ -19,8 +20,8 @@ body {
 
 .contenedor {
     width: 100%;
-    max-height: 1000px;
-    margin:auto;
+    /* max-height: 1000px; */
+    /* margin:auto; */
     display: grid;
     /* gap: 1px; */
     grid-template-columns: repeat(3, 1fr);
@@ -47,10 +48,8 @@ body {
     /* background-image: url(/SVG/low-poly-grid-haikei.svg); */
     background-size: cover;
     display: grid;
-    min-height: 799px;
-
+    min-height: var(--min-altura);
     /* opacity: 80%; */
-    /* height: 80.5vh; */
 }
 
 .footer {
@@ -58,21 +57,28 @@ body {
     background-color: var(--third-color);
 }
 .grid-articulos{
-    margin-top: 3.6em;
-    margin-bottom: 100px;
+    position: relative;
+    margin-top: 30px;
+    /* padding-bottom: 00px; */
     display: grid;
     /* grid-template-columns: repeat(6,1fr); */
+    /* grid-template-columns: repeat(5,1fr); */
+
     grid-template-columns: repeat(
         auto-fit,
         minmax(225px,1fr)
     );
-    /* grid-template-rows: 2; */
-    column-gap: 10px; 
+   /* grid-template-rows: 2; */
+    /* background-color: #1A1B30; */
+    column-gap: 50px;
     row-gap: 6em;
     justify-items: center;
+    padding-bottom: 100px;
+    max-width: 90%;
+    justify-self: center;
 
 
-}   
+}
 .item{
     justify-self: center;
     width: 225px;
@@ -102,7 +108,7 @@ body {
     font-size: 16px;
     border-radius: 1px;
 }
-.boton-animado div{ 
+.boton-animado div{
     position: relative;
     width: 0;
     height: 48.59px;
@@ -152,7 +158,7 @@ body {
     /* font-family: inherit; */
     color: var(--second-color);
    }
-   
+
    .button-ds1::before {
     content: '';
     width: 0;
@@ -166,13 +172,37 @@ body {
     display: block;
     z-index: -1;
    }
-   
+
    .button-ds1:hover::before {
     width: 105%;
    }
-   
+
    .button-ds1:hover {
     /* color: #111; */
 
     color: var(--main-color);
+
    }
+/* @media (min-width: 2317px) {
+
+    .grid-articulos{
+        grid-template-rows: repeat(
+            auto-fill,
+            225px
+        );
+    }
+    .contenido {
+        margin-bottom: 0;
+    }
+
+} */
+    /* .contenido {
+        margin-bottom: 0;
+    } */
+/* @media (max-width: 0px) {
+
+    .grid-articulos{
+        margin-top: 30px;
+    }
+
+} */
