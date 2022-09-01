@@ -30,9 +30,8 @@ body {
 .contenedor .header,
 .contenedor .contenido,
 .contenedor .footer {
-    background-color: #fff;
-    padding: 20px;
-    /* border-radius: 5px; */
+    /* background-color: #fff; */
+    padding: 23.8px;
 }
 
 .contenedor .header {
@@ -45,7 +44,7 @@ body {
 
 .contenido {
     grid-column: span 3;
-    background-image: url(/SVG/low-poly-grid-haikei.svg);
+    /* background-image: url(/SVG/low-poly-grid-haikei.svg); */
     background-size: cover;
     display: grid;
     min-height: 799px;
@@ -56,6 +55,7 @@ body {
 
 .footer {
     grid-column: span 3;
+    background-color: var(--third-color);
 }
 .grid-articulos{
     margin-top: 3.6em;
@@ -136,20 +136,22 @@ body {
     margin-left: 18%;
     margin-right: 10%;
 }
-/* From uiverse.io by @nikk7007 */
+/* From uiverse.io by @nikk7007 #17C3B2 */
 .button-ds1 {
     padding: 0.8em 1.8em;
-    border: 2px solid #17C3B2;
+    border: 2px solid var(--second-color);
     position: relative;
     overflow: hidden;
     background-color: transparent;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+        /* font-weight: regular 400; */
     transition: .3s;
     z-index: 1;
-    font-family: inherit;
-    color: #17C3B2;
+    /* font-family: inherit; */
+    color: var(--second-color);
    }
    
    .button-ds1::before {
@@ -160,7 +162,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    background: #17C3B2;
+    background:var(--second-color);
     transition: .5s ease;
     display: block;
     z-index: -1;
@@ -171,5 +173,7 @@ body {
    }
    
    .button-ds1:hover {
-    color: #111;
+    /* color: #111; */
+
+    color: var(--main-color);
    }
