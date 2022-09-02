@@ -37,7 +37,7 @@
     /* border-right: 4px solid #17FEFF; */
     overflow: hidden;
     color: var(--main-color);
-    animation: load91371 8s ease 6s infinite alternate running;
+    animation: load91371 6s ease 6s infinite alternate running;
     text-align: center;
     /* justify-self: center; */
 
@@ -71,3 +71,4 @@
     }
      */
   }
+

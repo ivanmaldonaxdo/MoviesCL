@@ -35,10 +35,10 @@ body {
     padding: 23.8px;
 }
 
-.contenedor .header {
+.header {
     background-color: var(--third-color);
     color: #fff;
-    font-weight: bold;
+    /* font-weight: bold; */
     grid-column-start: 1;
     grid-column-end: -1;
 }
@@ -49,27 +49,26 @@ body {
     background-size: cover;
     display: grid;
     min-height: var(--min-altura);
-    /* opacity: 80%; */
+    /* background-color: var(--third-color); */
 }
 
 .footer {
     grid-column: span 3;
     background-color: var(--third-color);
 }
+.footer >h1 {
+    font-family: "josefin sans", sans-serif;
+    color: var(--main-color);
+}
 .grid-articulos{
     position: relative;
-    margin-top: 30px;
+    margin-top: 40px;
     /* padding-bottom: 00px; */
     display: grid;
-    /* grid-template-columns: repeat(6,1fr); */
-    /* grid-template-columns: repeat(5,1fr); */
-
     grid-template-columns: repeat(
         auto-fit,
         minmax(225px,1fr)
     );
-   /* grid-template-rows: 2; */
-    /* background-color: #1A1B30; */
     column-gap: 50px;
     row-gap: 6em;
     justify-items: center;
@@ -88,14 +87,24 @@ body {
 .item> img{
     width: 100%;
     height: 90%;
-    border: 3px solid #01484C;
-
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+}
+.item > img:hover{
+    /* ANIMACION 1 */
+    margin-top: 8px;
+    /* margin-left: 10px; */
+    /* transform: scale(1.15); */
+    
 }
 .item > h3{
-    padding-top:0.4em ;
-    font-family:"kabel";
-    color: #e9ecf4;
-    text-align: center;
+    margin-top:0.6em ;
+    font-family: "josefin sans", sans-serif;
+    color: var(--main-color);
+    margin-left: 10px;
+    font-size:1.4em;
+    box-shadow: inset;
+    /* text-align: left; */
 }
 
 .boton-animado {
@@ -151,8 +160,8 @@ body {
     text-align: center;
     /* text-transform: uppercase; */
     font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
-        /* font-weight: regular 400; */
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Inconsolata', monospace;
     transition: .3s;
     z-index: 1;
     /* font-family: inherit; */
