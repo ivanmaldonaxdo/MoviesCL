@@ -226,11 +226,22 @@ body {
     }
 
 }
+@media screen and (max-width:760px){
+    .contenido{
+        background-color: #1A1B30;
+    }
+    .header{
+        grid-template-areas: "menu menu menu menu logo logo logo logo logo logo";
+
+    }
+    .logo{
+        justify-self: end;
+    }
+}
 @media screen and (max-width:780px){
     .menu{
         display: none;
     }
-
 }
 @media screen and (max-width:896px) and (orientation:landscape){
     .grid-articulos{
