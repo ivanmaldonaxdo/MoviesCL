@@ -203,7 +203,7 @@ body {
 }
 
 /* FORMULARIO DE CONTACTO */
-/*  */
+/*#region formulario */
 #contenedorform {
     margin-top: 40px;
     justify-self: center;
@@ -226,7 +226,7 @@ body {
     padding-bottom: 30px;
     border-radius: 3px;
     /* position: relative; */
-
+    
 }
 
 .cform .form .form-label {
@@ -241,7 +241,8 @@ body {
     background: #FFF;
     border: none;
     outline: none;
-    border-bottom: 3px solid transparent;
+    /* border-bottom: 3px solid transparent; */
+    box-shadow: inset 0 -3.1px 0 0 var(--second-color);
     width: 100%;
     padding: 12px;
     margin-top: 6px;
@@ -250,6 +251,26 @@ body {
     font-size: 14px;
     font-family: var(--principal_font);
 }
+
+
+/* .animation_nav {
+    position: relative;
+}
+
+.animation_nav::before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 3.5px;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+    box-shadow: inset 0 -3.1px 0 0 var(--second-color);
+    
+}
+.animation_nav:hover::before{
+    width: 100%;
+} */
 
 .cform .form .form-textarea {
     resize: vertical;
@@ -282,7 +303,7 @@ body {
 }
 .comentario{
     font-family: var(--principal_font);
-
+    
 }
 .cform {
     min-height: 100%;
@@ -300,6 +321,8 @@ div.error {
     margin-top: -20px;
     position: absolute;
 }
+/*#endregion formulario */
+
 @media screen and (max-width:1182px){
     /* .contenido{
         background-color: #1A1B30;
@@ -335,28 +358,3 @@ div.error {
         top:-30px;
     }
 }
-
-
-/* @media (min-width: 2317px) {
-
-    .grid-articulos{
-        grid-template-rows: repeat(
-            auto-fill,
-            225px
-        );
-    }
-    .contenido {
-        margin-bottom: 0;
-    }
-
-} */
-/* .contenido {
-        margin-bottom: 0;
-    } */
-/* @media (max-width: 0px) {
-
-    .grid-articulos{
-        margin-top: 30px;
-    }
-
-} */
