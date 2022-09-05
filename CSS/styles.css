@@ -199,11 +199,17 @@ body {
 .footer {
     grid-column: span 3;
     background-color: var(--third-color);
+    height: 20px;
 }
 
 .footer>h1 {
     font-family: "josefin sans", sans-serif;
     color: var(--main-color);
+}
+.footer>P {
+    font-family: "josefin sans", sans-serif;
+    color: var(--main-color);
+    text-align: center;
 }
 
 /*#endregion */
@@ -214,9 +220,9 @@ body {
     margin-right: 10%;
 }
 @media screen and (max-width:1182px){
-    .contenido{
+    /* .contenido{
         background-color: #1A1B30;
-    }
+    } */
     .header{
         grid-template-areas: "menu logo nav nav nav nav nav nav nav nav";
 
@@ -227,9 +233,9 @@ body {
 
 }
 @media screen and (max-width:760px){
-    .contenido{
+    /* .contenido{
         background-color: #1A1B30;
-    }
+    } */
     .header{
         grid-template-areas: "menu menu menu menu logo logo logo logo logo logo";
 
