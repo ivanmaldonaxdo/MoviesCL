@@ -5,14 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/animaciones.css">
+    <!--fuente roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Josefin+Sans&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="contenedor">
+        <!--#region Header -->
         <header class="header">
-            <h2>HEADER</h2>
+            <button class="btn">
+                <span class="icon">
+                    <a href="">
+                        <svg viewBox="0 0 175 80" width="40" height="40">
+                            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+                        </svg>
+                    </a>
+                </span>
+                <span class="text">MENU</span>
+            </button>
+            <div class="logo">
+                <img src="img/LogoWeb MovieCollection(Header).png" alt="ERROR" id="logomovc">                
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="animation_nav actived">Inicio</a></li>
+                    <li><a href="peliculas.html" class="animation_nav">Peliculas</a></li>
+                    <li><a class="animation_nav" href="">Series</a></li>
+                    <!-- <li><a href="indexNoticias.html" class="animation_nav">Noticias</a></li> -->
+                    <li><a href="indexFormulario.html" class="animation_nav">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
+        <!--#endregion Header -->
         <main class="contenido">
             <h1>Contenido</h1>
             <br>
@@ -30,8 +59,10 @@
                 recusandae rerum omnis maiores fugiat adipisci ab numquam consectetur itaque dolore, consequatur laborum
                 culpa minus accusantium.</p>
         </main>
-        <footer class="Footer">
-            <h1>Footer</h1>
+        <br>
+        <footer class="footer">
+            <p>© 2020 MOVIESCOLLECTION - TODOS LOS DERECHOS RESERVADOS</p>
+            <!-- <h1>Footer</h1> -->
         </footer>
     </div>
 
