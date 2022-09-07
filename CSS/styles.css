@@ -2,13 +2,15 @@
     --main-color: #F5911D;
     --second-color: #F5CD42;
     --third-color: #1A1B30;
-    --padding_general: 23.8px;
+    --padding_general: 30.8px;
     --min-altura: 799px;
     --alto-header: 50px;
     --principal_font: "josefin sans", sans-serif;
     --largo-text:30ch;
 }
-
+h2,h3,p{
+    text-shadow: 0.1em 0.1em 0.2em black
+}
 * {
     margin: 0;
     padding: 0;
@@ -118,6 +120,8 @@ body {
     grid-column: span 3;
     /* background-image: url(/SVG/low-poly-grid-haikei.svg); */
     /* background-image: url(/IMG/peliculas-terror-wallpaper-preview.jpg); */
+    background-image: url(/SVG/blurry-gradient-haikei\ \(2\).svg);
+
     background-size: cover;
     display: grid;
     min-height: var(--min-altura);
@@ -304,6 +308,7 @@ div.error {
     position: absolute;
 }
 /*#endregion formulario */
+/*#region index */
 .infoindex {
     margin-top: 50px;
     width: 100%;
@@ -358,7 +363,6 @@ div.error {
 
 }
 
-/*#region index */
 
 /*#endregion index */
 
