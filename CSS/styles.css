@@ -2,7 +2,7 @@
     --main-color: #F5911D;
     --second-color: #F5CD42;
     --third-color: #1A1B30;
-    --padding_general: 30.8px;
+    --padding_general: 36.8px;
     --min-altura: 799px;
     --alto-header: 50px;
     --principal_font: "josefin sans", sans-serif;
@@ -26,7 +26,15 @@ body {
     background: #e9ecf4;
     color: black;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.0;
+    height: 100%;
 }
+/* body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+} */
 
 .contenedor {
     width: 100%;
@@ -187,7 +195,6 @@ body {
 .footer {
     grid-column: span 3;
     background-color: var(--third-color);
-    height: 20px;
 }
 
 .footer>h1 {
@@ -343,7 +350,6 @@ div.error {
 }
 .informativo >center > div > h2{
     margin-top: 20px;
-
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
@@ -367,7 +373,7 @@ div.error {
 /* #region Carrousel */
 .sliderubic {
     border: 1px solid #ffa11e;
-    
+
 }
 
 .sliderubic::before {
@@ -384,7 +390,6 @@ div.error {
 
 .sliderimage {
     width: 100%;
-    width: auto;
     max-height: 50%;
 }
 /* MODIFICACION AL CARRUSEL */
@@ -408,12 +413,15 @@ div.error {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     transform: translateX(-50%) translateY(-50%);
 }
-#corrige_padding{
+/* #corrige_padding{
     position: relative;
 }
 #corrige_padding>ul> li> a { 
     padding-bottom: 10px;
 }
+#corrige_padding_footer{
+    padding-bottom: calc( var(--padding_general) +10px);
+} */
 
 /* #endregion Carrousel */
 
