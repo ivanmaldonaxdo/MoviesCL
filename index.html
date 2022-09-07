@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&family=Josefin+Sans&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
 </head>
 
 <body>
@@ -31,7 +35,7 @@
             <div class="logo">
                 <img src="img/LogoWeb MovieCollection(Header).png" alt="ERROR" id="logomovc">                
             </div>
-            <nav class="menu">
+            <nav class="menu" id="corrige_padding">
                 <ul>
                     <li><a href="index.html" class="animation_nav actived">Inicio</a></li>
                     <li><a href="peliculas.html" class="animation_nav">Peliculas</a></li>
@@ -43,6 +47,35 @@
         </header>
         <!--#endregion Header -->
         <main class="contenido">
+            <div id="carouselExampleIndicators" class="carousel slide sliderubic" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1 class="eslogan">LA MEJORES RECOMENDACIONES<br>DE PELICULAS</h1>
+                        <img src="img/iron_man_3_sl.jpg" class="d-block w-100 imgcarrusel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="eslogan">TUS SERIES FAVORITAS<br>Y MAS</h1>
+                        <img src="img/breaking_bad_sl.jpg" class="d-block w-100 imgcarrusel" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="eslogan">LAS ULTIMAS NOTICIAS<br>DEL CINE</h1>
+                        <img src="img/StarWars_sl.jpg" class="d-block w-100 imgcarrusel" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
             <!-- <h1>Contenido</h1> -->
             <section class="infoindex">
                 <article class="informativo">
@@ -76,6 +109,8 @@
                     
                 </article>
             </section>
+            <br>
+            <br>
         </main>
         <footer class="footer">
             <p>© 2020 MOVIESCOLLECTION - TODOS LOS DERECHOS RESERVADOS</p>
